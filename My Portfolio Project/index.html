@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="description" content="Personal portfolio showcasing projects and contact information.">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#home">RALPH TECH &#128187;</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav id="site-nav" class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Hi &#128075; I'm Raphael</h1>
+                    <p class="lead">I build clean, accessible websites and delightful user experiences.</p>
+                    <div class="hero-ctas">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn" href="#contact">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-media" aria-hidden="true">
+                    <!-- <div class="placeholder"><img src="Images/Hero-Image.png" alt="Hero Image"></div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <h2>About</h2>
+            <p>I’m a front-end developer focused on building performant, accessible interfaces. I enjoy problem solving,
+                clean design, and learning new technologies.</p>
+        </section>
+
+        <section id="projects" class="projects container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="card">
+                    <div class="card-media"><img src="Images/Project-1.png" alt="Project 1"></div>
+                    <div class="card-body">
+                        <h3>Project One</h3>
+                        <p>Short description of project one. Tech used and key feature.</p>
+                        <a class="btn" href="#">View</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="Images/Project-2.jpeg" alt="Project 2"></div>
+                    <div class="card-body">
+                        <h3>Project Two</h3>
+                        <p>Short description of project two. Tech used and key feature.</p>
+                        <a class="btn" href="#">View</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-media"><img src="Images/RALPH TECH.jpg" alt="Project 3"></div>
+                    <div class="card-body">
+                        <h3>Project Three</h3>
+                        <p>Short description of project three. Tech used and key feature.</p>
+                        <a class="btn" href="#">View</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button class="btn primary" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Ralph Tech — Built with care.</p>
+        </div>
+    </footer>
+
+    <script src="Javascript/main.js"></script>
+</body>
+
+</html>
